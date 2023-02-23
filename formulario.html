@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <div>
+        <h1 id="tit"> Cadastro de Amigos</h1>
+        <p id="subtit">Preencha o formulario para participar do processo seletivo</p>
+        <br>
+    </div>
+
+    <form>
+        <div class="campo">
+            <lable for="nome"> <strong> Nome Completo </strong></lable>
+            <input type="text" name="nome" id="nome" required>
+        </div>
+            
+        <div class="campo">
+            <label for="data"> <strong> Data de Nascimento </strong></label>
+            <input type="date" name="data" id="data">
+        </div>
+            
+
+        <div class="campo">
+            <label for="email"> <strong> Whatsapp </strong></label>
+            <input type="text" name="contato" id="contato">
+        </div>
+
+        <div>
+            <label> <strong> Genero </strong></label> <br>
+            <label>
+                <input type="radio" name="genero" value="masculino"> Macho
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino"> Femêa
+            </label>
+            <label>
+                <input type="radio" name="genero" value="agenero"> Não binario
+            </label>
+            <label>
+                <input type="radio" name="genero" value="nao"> Não é da sua conta
+            </label>
+        </div> <br>
+
+        <div class="campo">
+            <label> <strong> Signo </strong> </label>
+            <select id="orientacao">
+                <option selected disabled value=""> Selecione</option>
+                <option>Aries</option>
+                <option>Touro</option>
+                <option>Gemeos</option>
+                <option>Cancer</option>
+                <option>Leao</option>
+                <option>Virgem</option>
+                <option>Libra</option>
+                <option>Escorpião</option>
+                <option>Sagitario</option>
+                <option>Capricornio</option>
+                <option>Aquario</option>
+                <option>Peixes</option>
+            </select>
+        </div> <br>
+
+        <div class="campo">
+            <label> <strong> Orientação Sexual </strong> </label>
+            <select id="orientacao">
+                <option selected disabled value=""> Selecione</option>
+                <option>Lesbica</option>
+                <option>Gay</option>
+                <option>Bissexual</option>
+                <option>Transexual</option>
+                <option>Queer</option>
+                <option>Intersexo</option>
+                <option>Assexual</option>
+                <option>Hetero</option>
+            </select>
+        </div> <br>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label> <strong> Selecione seus passatempos: </strong> </label> <br><br>
+                <input type="checkbox" id="passa1" name="passa1" value="cinema">
+                <label for="passe1"> Cinema </label>
+                <input type="checkbox" id="passa2" name="passa2" value="parque">
+                <label for="passe2"> Parque </label>
+                <input type="checkbox" id="passa3" name="passa3" value="shopping">
+                <label for="passe3"> Shopping </label>
+                <input type="checkbox" id="passa4" name="passa4" value="restaurante">
+                <label for="passe4"> Restaurante </label>
+                <input type="checkbox" id="passa5" name="passa5" value="balada">
+                <label for="passe5"> Balada </label> <br> <br>
+                <input type="checkbox" id="passa6" name="passa6" value="livros">
+                <label for="passe6"> Livros </label>
+                <input type="checkbox" id="passa7" name="passa7" value="serie">
+                <label for="passe7"> Séries </label>
+                <input type="checkbox" id="passa8" name="passa5" value="yoga">
+                <label for="passe8"> Yoga </label>
+                <input type="checkbox" id="passa9" name="passa9" value="academia">
+                <label for="passe9"> Academia </label>
+                <input type="checkbox" id="passa10" name="passa10" value="igreja">
+                <label for="passe10"> Igreja </label>
+            </div>
+        </fieldset>
+    </form>
+
+    <button class="botao" type="submit"> Enviar </button>
+</body>
+</html>
